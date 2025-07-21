@@ -12,7 +12,7 @@ def plot_moodychart(a = -6, b = -2, num = 5) -> None:
         [x,y] = calculate_frictionfactorcurve(e_over_d)
 
         ax1.loglog(x, y)
-        ax1.text(x[-1], y[-1], f"      {e_over_d:.1e}")
+        ax1.text(x[-1], y[-1], f"{e_over_d:12.1e}")
 
     ax1.set_xlabel("Reynold's Number [-], (log scale)")
     ax1.set_ylabel("Friction Factor [-], (log scale)")
